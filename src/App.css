@@ -1,0 +1,108 @@
+body {
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: #ddd;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app h1 {
+  text-align: center;
+  font-family: 'Rancho';
+}
+
+.todolist {
+  position: relative;
+  width: initial;
+  background: #e7e7a1;
+  border-radius: 5px;
+  border: 2px solid #bbb;
+  padding: 1rem 2rem;
+  margin: 0.5rem 2rem;
+  flex: 1;
+  box-shadow: 3px 3px 3px 2px #bbb;
+  overflow-x: hidden;
+}
+
+.todo {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.todo label {
+ display: flex;
+}
+.todo label span {
+  word-break: break-word;
+}
+
+.todo input {
+  cursor: pointer;
+}
+
+.lined-text {
+  text-decoration: line-through;
+}
+
+.left-todo {
+  text-decoration: underline;
+  padding: .5rem 2rem;
+}
+
+.name-todo {
+  padding: .52rem 1rem;
+  margin: .5rem 2rem;
+  /* transition: box-shadow 0.3s, border 0.3s; */
+}
+
+.name-todo:hover {
+  box-shadow: 0 0 2px 2px #ccc;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+.name-todo:focus-within {
+  /* box-shadow: 0 0 2px 2px #ccc; */
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+.options-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5rem 2rem;
+}
+
+.options-ctn button {
+  min-width: 8rem;
+  padding: .5rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  transition:  background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+button.add {
+  background-color: rgb(146, 189, 155);
+}
+
+button.add:hover {
+  background-color: rgb(79, 186, 102);
+  box-shadow: 0 0 .3rem .3rem #CCC;
+}
+
+button.clear {
+  background-color: rgb(171, 108, 108);
+}
+
+button.clear:hover {
+  box-shadow: 0 0 .3rem .3rem #CCC;
+  background-color: rgb(174, 56, 56);
+}
